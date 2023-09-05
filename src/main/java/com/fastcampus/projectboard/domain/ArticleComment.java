@@ -24,10 +24,13 @@ public class ArticleComment extends AuditingFields {
     @Setter @ManyToOne(optional = false) private Article article; // 게시글 (ID)
     @Setter @ManyToOne(optional = false) private UserAccount userAccount; // 유저 정보 (ID)
 
+
     @Setter @Column(nullable = false, length = 500) private String content; // 본문
 
 
+
     protected ArticleComment() {}
+
 
     private ArticleComment(Article article, UserAccount userAccount, String content) {
         this.article = article;
@@ -36,6 +39,7 @@ public class ArticleComment extends AuditingFields {
     }
 
     public static ArticleComment of(Article article, UserAccount userAccount, String content) {
+
         return new ArticleComment(article, userAccount, content);
     }
 

@@ -6,6 +6,7 @@ values ('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now
 ;
 
 -- 123 게시글
+
 insert into article (user_account_id, title, content, hashtag, created_by, modified_by, created_at, modified_at)
 values (1, 'Quisque ut erat.', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
 
@@ -539,8 +540,8 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
         '#yellow', 'Hoyt', 'Austina', '2021-06-26 18:20:38', '2021-02-20 16:09:49'),
        (1, 'Ut tellus.', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
 
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', null, 'Wilmer', 'Ingra',
-        '2021-07-19 14:18:17', '2022-01-23 17:29:54')
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', null, 'Wilmer', 'Ingra', '2021-07-19 14:18:17', '2022-01-23 17:29:54')
 ;
 
 -- 1000 댓글
@@ -1332,3 +1333,4 @@ values (49, 1,
         'Vittorio', 'Milty'),
        (19, 1, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2021-05-07 23:57:29',
         '2021-04-03 21:55:11', 'Oliver', 'Graehme');
+
